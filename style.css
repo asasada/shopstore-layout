@@ -17,7 +17,8 @@ header {
   height: 39px;
   width: 106px;
   margin: 0 auto;
-  background: url(./Images/main/ct/menu_top/Bitmap@1x.svg);
+  background: url(./Images/main/ct/menu_top/Bitmap.png);
+  background-size: 106px 39px;
 }
 
 #basket-link {
@@ -52,7 +53,7 @@ header {
 .basket-icon {
   width: 24px;
   height: 22px;
-  background: url(./Images/main/ct/menu_top/ic/shop_inactive@1x.svg);
+  background: url(./Images/main/ct/menu_top/ic/shop_inactive.png);
   background-size: 24px 22px;
 }
 
@@ -690,7 +691,7 @@ button.item-button {
 #close-basket {
   width: 20px;
   height: 20px;
-  background: url(./Images/Main_shop/Right_menu_shop/Group5@1x.svg);
+  background: url(./Images/Main_shop/Right_menu_shop/Group5.png);
   background-size: 20px 20px;
   margin: 45px;
   float: right;
