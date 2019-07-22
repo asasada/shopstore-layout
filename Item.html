@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+<header>
+    <a href ="./Main.html" id="logo"></a>
+    <a id="basket-link" class="hidden">
+        <span class="icon basket-icon"></span>
+        <span id="basket-counter">0</span>
+    </a>
+</header>
+
+
+<main>
+    <section class="main-image">
+        <img src="./Images/Item/Group/Bitmap.png"/>
+    </section>
+
+    <section class="item-card">
+        <a href="./Main.html" class="link-back"><i class="fa fa-angle-left"></i><span>Назад</span></a>
+        <p class="item-category">Рубашки</p>
+        <h1>Рубашка на пуговицах</h1>
+        <select class="item-button">
+            <option selected disabled>Размер</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <button class="item-button">В корзину</button>
+        <article>
+            <p class="about-item">Рубашка на пуговицах от <b>Yohji Yamamoto</b> (Йоджи Ямамото). Классический воротник,
+                застежка на пуговицах спереди, нагрудный карман, удлиненная модель, прошитые панели, длинные рукава и
+                манжеты на пуговицах.<br>
+                <br><br>Рост модели 1,88 м, надет размер 2<br><br>Образ модели дополнен: Yohji Yamamoto широкие
+                укороченные брюки, Converse кроссовки 'One Star'.</p>
+                <table class="attributes-table">
+                    <tr>
+                        <td>Цвет:</td>
+                        <td>Черный</td>
+                    </tr>
+                    <tr>
+                        <td>Состав:</td>
+                        <td>Шерсть 100%</td>
+                    </tr>
+                    <tr>
+                        <td>Уход:</td>
+                        <td>Сухая чистка</td>
+                    </tr>
+                    <tr>
+                        <td>Артикул:</td>
+                        <td>HHB73100</td>
+                    </tr>
+                </table>
+        </article>
+    </section>
+
+</main>
+
+<section id="basket">
+    <span class="icon" id="close-basket"></span>
+    <ul class="items-in-basket">
+    </ul>
+    <p class="basket-amount"><span>В корзине пока пусто.</span></p>
+</section>
+
+<script>
+    let basket = document.getElementById('basket');
+
+    document.getElementById('basket-link').onclick = function () {
+        basket.style.display = "block";
+    };
+
+    document.getElementById('close-basket').onclick = function () {
+        basket.style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+header {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+#logo {
+  display: block;
+  height: 39px;
+  width: 106px;
+  margin: 0 auto;
+  background: url(../Images/main/ct/menu_top/Bitmap@1x.svg);
+}
+
+.basket {
+  position: absolute;
+  right: 0;
+  display: block;
+}
+
+div.basket-counter {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-right: 100px;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+span#basket-counter {
+  position: relative;
+  bottom: -2px;
+}
+
+.basket-icon {
+  width: 24px;
+  height: 22px;
+  background: url(../Images/main/ct/menu_top/ic/shop_inactive@1x.svg);
+  background-size: 24px 22px;
+}
+
+/*# sourceMappingURL=header.css.map */

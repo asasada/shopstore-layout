@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <header>
+        <a href ="./Main.html" id="logo"></a>
+        <a id="basket-link">
+            <span class="icon basket-icon"></span>
+            <span id="basket-counter">2</span>
+        </a>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" class="menu-link current">Все</a></li>
+                    <li><a href="#" class="menu-link">Плащи</a></li>
+                    <li><a href="#" class="menu-link">Кроссовки</a></li>
+                    <li><a href="#" class="menu-link">Рубашки</a></li>
+                    <li><a href="#" class="menu-link">Брюки</a></li>
+                </ul>
+            </nav>
+            <div class="sorting selecting">
+                <p id="sorting-wrap"><span>Сортировать </span><i class="fa fa-angle-down"></i></p>
+                <ul class="select-options">
+                    <li><a href="?sort=tocheap" class="select-option">От дорогих к дешевым</a></li>
+                    <li><a href="?sort=toexpensive" class="select-option">От дешевых к дорогим</a></li>
+                    <li><a href="?sort=popular" class="select-option">Популярные</a></li>
+                    <li><a href="?sort=new" class="select-option">Новые</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="items clearfix">
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Рубашки</p>
+                        <h3 class="item-title">Рубашка на пуговицах</h3>
+                        <p class="item-price">$320</p>
+                        <p class="item-instock">на складе: 20</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Рубашки</p>
+                        <h3 class="item-title">Рубашка с принтом</h3>
+                        <p class="item-price">$170</p>
+                        <p class="item-instock">на складе: 11</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Main/Group 4 Copy 2/Group/Bitmap.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Обувь</p>
+                        <h3 class="item-title">Кроссовки «Kaiwa» Y3 x Adidas</h3>
+                        <p class="item-price">$240</p>
+                        <p class="item-instock">на складе: 134</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Group 4 Copy.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Рубашки</p>
+                        <h3 class="item-title">Куртка-рубашка с карманами</h3>
+                        <p class="item-price">$1240</p>
+                        <p class="item-instock">на складе: 11</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Main/Group 4 Copy/Group/Bitmap.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Обувь</p>
+                        <h3 class="item-title">Кроссовки с пряжками</h3>
+                        <p class="item-price">$390</p>
+                        <p class="item-instock">на складе: 11</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="item-wrapper">
+                <a href="./Item.html" class="item">
+                    <div class="item-image">
+                        <img src="./Images/Bitmap.png">
+                    </div>
+                    <div class="item-description">
+                        <p class="item-category">Рубашки</p>
+                        <h3 class="item-title">Укороченные зауженные брюки</h3>
+                        <p class="item-price">$647</p>
+                        <p class="item-instock">на складе: 7</p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </main>
+
+    <section id="basket">
+        <span class="icon" id="close-basket"></span>
+        <ul class="items-in-basket">
+            <li class="clearfix">
+                <img src="./Images/Main_shop/ct/active_item/Rectangle 2/Bitmap.png"/>
+                <p>Рубашка на пуговицах</p>
+                <p class="items-number">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                    <span class="price-in-basket">$320</span></p>
+            </li>
+            <li class="clearfix">
+                <img src="./Images/Main_shop/ct/active_item/Rectangle 2 Copy 4/Bitmap.png"/>
+                <p>Кроссовки «Kaiwa» Y3</p>
+                <p class="items-number">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                    <span class="price-in-basket">$240</span></p>
+            </li>
+        </ul>
+        <p class="basket-amount"><span>Итого</span><span class="basket-total">$800</span></p>
+        <button class="item-button buy-button">Купить</button>
+    </section>
+
+    <script>
+        let basket = document.getElementById('basket');
+
+        document.getElementById('basket-link').onclick = function () {
+            basket.style.display = "block";
+        };
+
+        document.getElementById('close-basket').onclick = function () {
+            basket.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+aside {
+    float: left;
+    width: 214px;
+    padding: 30px 0;
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+
+    li {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+.menu-link {
+    padding: 12px 0 12px 10px;
+    display: block;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    border: white solid 1px;
+
+    &.current {
+        font-weight: 600;
+    }
+
+    &:hover {
+        border: black solid 1px;
+        transition: 0.5s;
+    }
+}
+
+.sorting {
+    width: 192px;
+}
+
+#sorting-wrap {
+    width: 162px;
+    font-size: 14px;
+    margin: 25px 20px 8px 20px;
+    padding: 12px 0 12px 10px;
+
+    & > span {
+        vertical-align: middle;
+    }
+
+    & > i {
+        padding-left: 10px;
+        transition: 0.8s;
+        transition-property: transform;
+    }
+}
+
+.selecting:hover {
+    & > #sorting-wrap > .fa {
+        -webkit-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+
+    & .select-options {
+        visibility: visible;
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+ul.select-options {
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: 0.5s;
+    transition-property: transform;
+    margin: 0;
+    padding: 10px;
+    border: 1px black solid;
+    list-style: none;
+}
+
+a.select-option {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+

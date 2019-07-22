@@ -1,0 +1,61 @@
+header {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+#logo {
+  display: block;
+  height: 39px;
+  width: 106px;
+  margin: 0 auto;
+  background: url(./Images/main/ct/menu_top/Bitmap@1x.svg);
+}
+
+#basket-link {
+  position: absolute;
+  margin-right: 8.8vw;
+  padding: 2px;
+  right: 0;
+  cursor: pointer;
+
+  &.hidden {
+    .basket-icon{
+      opacity: 0.5;
+    }
+
+    #basket-counter {
+      visibility: hidden;
+    }
+  }
+}
+
+#basket-counter {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 1px 6px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.basket-icon {
+  width: 24px;
+  height: 22px;
+  background: url(./Images/main/ct/menu_top/ic/shop_inactive@1x.svg);
+  background-size: 24px 22px;
+}
