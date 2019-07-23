@@ -1,21 +1,20 @@
 #basket {
-  display: none;
+  display: block;
   position: fixed;
   width: 340px;
   height: 100vh;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: -340px;
   background: #2b2b2b;
   z-index: 100;
-  transition: 0.5s;
-
+  transition: right 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #close-basket {
   width: 20px;
   height: 20px;
-  background: url(./Images/Main_shop/Right_menu_shop/Group5@1x.svg);
+  background: url(Group5@1x.svg);
   background-size: 20px 20px;
   margin: 45px;
   float: right;
@@ -34,7 +33,7 @@
     font-size: 12px;
     color: white;
 
-    & > img {
+    & img {
       padding: 0 15px;
       height: 83px;
       float: left;

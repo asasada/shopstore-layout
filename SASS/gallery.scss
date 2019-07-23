@@ -1,0 +1,50 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 0 22px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.8s;
+
+  img {
+    height: 40px;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+}
+
+.item-images:hover {
+  & > .gallery {
+    height: 60px;
+  }
+}
+
+button.arrow {
+  position: absolute;
+  color: grey;
+  background-color: white;
+  border: none;
+  padding: 15px 7px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+  &.right {
+    right: 0;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+

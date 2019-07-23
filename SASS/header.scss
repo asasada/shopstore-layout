@@ -17,7 +17,8 @@ header {
   height: 39px;
   width: 106px;
   margin: 0 auto;
-  background: url(./Images/main/ct/menu_top/Bitmap@1x.svg);
+  background: url(Bitmap@1x.svg);
+  background-size: 106px 39px;
 }
 
 #basket-link {
@@ -27,7 +28,7 @@ header {
   right: 0;
   cursor: pointer;
 
-  &.hidden {
+  &.empty {
     .basket-icon{
       opacity: 0.5;
     }
@@ -56,6 +57,6 @@ header {
 .basket-icon {
   width: 24px;
   height: 22px;
-  background: url(./Images/main/ct/menu_top/ic/shop_inactive@1x.svg);
+  background: url(shop_inactive@1x.svg);
   background-size: 24px 22px;
 }

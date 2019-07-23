@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <a href ="./Main.html" id="logo"></a>
         <a id="basket-link">
@@ -17,6 +19,7 @@
     </header>
 
     <main>
+
         <aside>
             <nav>
                 <ul class="menu">
@@ -40,40 +43,46 @@
 
         <section class="items clearfix">
             <article class="item-wrapper">
-                    <div class="item-images">
-                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png" class="item-mainimage" alt="Рубашка на пуговицах"/>
-                        <div class="gallery">
-                            <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt=""/>
-                            <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" alt=""/>
-                            <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt="">
-                            <img src="./Images/Main_shop/Group 4 Copy 2/Group 4 Copy/Group/Bitmap.png" alt=""/>
-                            <img src="./Images/Main_shop/ct/active_item/Group/Bitmap.png" alt=""/>
-                            <img src="./Images/Item/Group/Bitmap.png" alt=""/>
-
-                        </div>
+                <div class="item-images">
+                    <a href="./Item.html" class="anchor-on-image"></a>
+                    <img src="./Images/Main/ct/active_item/Group/Bitmap.png" class="item-mainimage" alt="Рубашка на пуговицах"/>
+                    <div class="gallery">
+                        <button class="arrow left" onclick="leftScroll(this.parentElement)">
+                            <icon class="fa fa-angle-left"></icon>
+                        </button>
+                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt=""/>
+                        <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" alt=""/>
+                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt="">
+                        <img src="./Images/Main_shop/Group 4 Copy 2/Group 4 Copy/Group/Bitmap.png" alt=""/>
+                        <img src="./Images/Main_shop/ct/active_item/Group/Bitmap.png" alt=""/>
+                        <img src="./Images/Item/Group/Bitmap.png" alt=""/>
+                        <button class="arrow right" onclick="rightScroll(this.parentElement)">
+                            <icon class="fa fa-angle-right"></icon>
+                        </button>
                     </div>
-                    <a href="./Item.html">
-                        <div class="item-description">
-                            <p class="item-category">Рубашки</p>
-                            <h3 class="item-title">Рубашка на пуговицах</h3>
-                            <p class="item-price">$320</p>
-                            <p class="item-instock">на складе: 20</p>
-                        </div>
-                    </a>
+                </div>
+
+                <a href="./Item.html">
+                    <div class="item-description">
+                        <p class="item-category">Рубашки</p>
+                        <h3 class="item-title">Рубашка на пуговицах</h3>
+                        <p class="item-price">$320</p>
+                        <p class="item-instock">на складе: 20</p>
+                    </div>
+                </a>
             </article>
 
             <article class="item-wrapper">
-                <a href="./Item.html" class="item">
-                    <div class="item-images">
-                        <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" class="item-mainimage" alt="Рубашка с принтом"/>
-                    </div>
-                    <div class="item-description">
-                        <p class="item-category">Рубашки</p>
-                        <h3 class="item-title">Рубашка с принтом</h3>
-                        <p class="item-price">$170</p>
-                        <p class="item-instock">на складе: 11</p>
-                    </div>
-                </a>
+                <div class="item-images">
+                    <a href="./Item.html" class="anchor-on-image"></a>
+                    <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" class="item-mainimage" alt="Рубашка с принтом"/>
+                </div>
+                <div class="item-description">
+                    <p class="item-category">Рубашки</p>
+                    <h3 class="item-title">Рубашка с принтом</h3>
+                    <p class="item-price">$170</p>
+                    <p class="item-instock">на складе: 11</p>
+                </div>
             </article>
 
             <article class="item-wrapper">
@@ -138,6 +147,7 @@
     <section id="basket">
         <span class="icon" id="close-basket"></span>
         <ul class="items-in-basket">
+
             <li class="clearfix">
                 <a href="Item.html">
                     <img src="./Images/Main_shop/ct/active_item/Rectangle 2/Bitmap.png" alt="Рубашка на пуговицах"/>
@@ -149,6 +159,7 @@
                     <button>+</button>
                     <span class="price-in-basket">$320</span></p>
             </li>
+
             <li class="clearfix">
                 <a href="Item.html">
                     <img src="./Images/Main_shop/ct/active_item/Rectangle 2/adidas.png" alt="Кроссовки «Kaiwa» Y3"/>
@@ -160,6 +171,7 @@
                     <button>+</button>
                     <span class="price-in-basket">$240</span></p>
             </li>
+
         </ul>
         <p class="basket-amount"><span>Итого</span><span class="basket-total">$800</span></p>
         <button class="item-button buy-button">Купить</button>
