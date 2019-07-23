@@ -40,23 +40,32 @@
 
         <section class="items clearfix">
             <article class="item-wrapper">
-                <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png">
+                    <div class="item-images">
+                        <img src="./Images/Main/ct/active_item/Group/Bitmap.png" class="item-mainimage" alt="Рубашка на пуговицах"/>
+                        <div class="gallery">
+                            <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt=""/>
+                            <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" alt=""/>
+                            <img src="./Images/Main/ct/active_item/Group/Bitmap.png" alt="">
+                            <img src="./Images/Main_shop/Group 4 Copy 2/Group 4 Copy/Group/Bitmap.png" alt=""/>
+                            <img src="./Images/Main_shop/ct/active_item/Group/Bitmap.png" alt=""/>
+                            <img src="./Images/Item/Group/Bitmap.png" alt=""/>
+
+                        </div>
                     </div>
-                    <div class="item-description">
-                        <p class="item-category">Рубашки</p>
-                        <h3 class="item-title">Рубашка на пуговицах</h3>
-                        <p class="item-price">$320</p>
-                        <p class="item-instock">на складе: 20</p>
-                    </div>
-                </a>
+                    <a href="./Item.html">
+                        <div class="item-description">
+                            <p class="item-category">Рубашки</p>
+                            <h3 class="item-title">Рубашка на пуговицах</h3>
+                            <p class="item-price">$320</p>
+                            <p class="item-instock">на складе: 20</p>
+                        </div>
+                    </a>
             </article>
 
             <article class="item-wrapper">
                 <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png">
+                    <div class="item-images">
+                        <img src="./Images/Main/ct/item/Group 4 Copy/Group/Bitmap.png" class="item-mainimage" alt="Рубашка с принтом"/>
                     </div>
                     <div class="item-description">
                         <p class="item-category">Рубашки</p>
@@ -69,8 +78,8 @@
 
             <article class="item-wrapper">
                 <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Main/Group 4 Copy 2/Group/Bitmap.png">
+                    <div class="item-images">
+                        <img src="./Images/Main/Group 4 Copy 2/Group/Bitmap.png" class="item-mainimage" alt="Кроссовки «Kaiwa» Y3 x Adidas"/>
                     </div>
                     <div class="item-description">
                         <p class="item-category">Обувь</p>
@@ -83,8 +92,8 @@
 
             <article class="item-wrapper">
                 <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Group 4 Copy.png">
+                    <div class="item-images">
+                        <img src="./Images/Group 4 Copy.png" class="item-mainimage" alt="Куртка-рубашка с карманами"/>
                     </div>
                     <div class="item-description">
                         <p class="item-category">Рубашки</p>
@@ -97,8 +106,8 @@
 
             <article class="item-wrapper">
                 <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Main/Group 4 Copy/Group/Bitmap.png">
+                    <div class="item-images">
+                        <img src="./Images/Main/Group 4 Copy/Group/Bitmap.png" class="item-mainimage" alt="Кроссовки с пряжками"/>
                     </div>
                     <div class="item-description">
                         <p class="item-category">Обувь</p>
@@ -111,8 +120,8 @@
 
             <article class="item-wrapper">
                 <a href="./Item.html" class="item">
-                    <div class="item-image">
-                        <img src="./Images/Bitmap.png">
+                    <div class="item-images">
+                        <img src="./Images/Bitmap.png" class="item-mainimage" alt="Укороченные зауженные брюки"/>
                     </div>
                     <div class="item-description">
                         <p class="item-category">Рубашки</p>
@@ -130,7 +139,9 @@
         <span class="icon" id="close-basket"></span>
         <ul class="items-in-basket">
             <li class="clearfix">
-                <img src="./Images/Main_shop/ct/active_item/Rectangle 2/Bitmap.png"/>
+                <a href="Item.html">
+                    <img src="./Images/Main_shop/ct/active_item/Rectangle 2/Bitmap.png" alt="Рубашка на пуговицах"/>
+                </a>
                 <p>Рубашка на пуговицах</p>
                 <p class="items-number">
                     <button>-</button>
@@ -139,7 +150,9 @@
                     <span class="price-in-basket">$320</span></p>
             </li>
             <li class="clearfix">
-                <img src="./Images/Main_shop/ct/active_item/Rectangle 2 Copy 4/Bitmap.png"/>
+                <a href="Item.html">
+                    <img src="./Images/Main_shop/ct/active_item/Rectangle 2/adidas.png" alt="Кроссовки «Kaiwa» Y3"/>
+                </a>
                 <p>Кроссовки «Kaiwa» Y3</p>
                 <p class="items-number">
                     <button>-</button>
@@ -152,17 +165,7 @@
         <button class="item-button buy-button">Купить</button>
     </section>
 
-    <script>
-        let basket = document.getElementById('basket');
-
-        document.getElementById('basket-link').onclick = function () {
-            basket.style.display = "block";
-        };
-
-        document.getElementById('close-basket').onclick = function () {
-            basket.style.display = "none";
-        }
-    </script>
-
+    <script src="basket-appearance.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>

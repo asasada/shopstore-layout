@@ -1,9 +1,10 @@
-@import "SASS/header.scss";
 @import "SASS/normalize.scss";
+@import "SASS/header.scss";
 @import "SASS/menu.scss";
 @import "SASS/items.scss";
 @import "SASS/item.scss";
 @import "SASS/basket.scss";
+@import "SASS/gallery.scss";
 
 * {
   box-sizing: border-box;
@@ -27,6 +28,10 @@ main {
     font-size: 20px;
     font-weight: 100;
     color: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 .clearfix::after {
